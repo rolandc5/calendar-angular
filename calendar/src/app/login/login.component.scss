@@ -1,0 +1,54 @@
+.log-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.log-loginContainer {
+    display: flex;
+    justify-content: center;
+    border: solid 1px gray;
+    margin: 5em;
+    padding: 1em;
+    height: 25em;
+    width: 20em;
+}
+
+.log-avatarContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.log-avatarPictureSize {
+    height: 10em;
+    width: 10em;
+}
+
+.log-formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: .5em;
+}
+
+.log-formStyle {
+    margin: .5em;
+    height: 1em;
+    width: 20em;
+    padding: .5em;
+}
+
+.log-loginButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.log-buttonStyle {
+    margin: .5em;
+    width: 10em;
+    height: 2em;
+}
+

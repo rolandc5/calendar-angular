@@ -1,0 +1,25 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.calendarContainer {
+    border: solid;
+    border-radius: 10px;
+    height: 40em;
+    width: 50em;
+}
+
+.titleContainer {
+    border-bottom: solid;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.monthTitle {
+    font-size: 50px;
+}

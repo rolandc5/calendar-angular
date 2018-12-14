@@ -1,0 +1,16 @@
+<div class="log-container">
+  <div class="log-loginContainer">
+    <div>
+      <div class="log-avatarContainer"><img class="log-avatarPictureSize" src="../../assets/images/man.svg"></div>
+      <div class="log-formContainer">
+        <h2>Login</h2>
+        <input class="log-formStyle" type="text" placeholder="email" name="username" (change)="onHandleForm($event)"/>
+        <input class="log-formStyle" type="text" placeholder="password" name="password" (change)="onHandleForm($event)"/>
+        <div class="log-loginButtonContainer">
+          <button class="log-buttonStyle" (click)="onSubmitLogin($event)">Login</button>
+          <button class="log-buttonStyle"(click)="onSubmitSignUp($event)">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
