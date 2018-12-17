@@ -1,18 +1,115 @@
 .h-container {
     padding: 0;
     margin: 0;
+}
+
+.h-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h-sideBar {
+    border: solid;
+    width: 15em;
+    height: 10em;
+}
+
+.h-mainBar {
+    border-left: solid 0.1px;
+    border-right: solid 0.1px;
+    width: 70%;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h-formContainer {
     display: flex;
     justify-content: center;
 }
 
-.h-todoContainer {
-    border: solid;
-    height: 40em;
-    width: 30em;
-    margin: 1em;
+.h-recipeForm {
+    border: none 0.1px gray;
+    height: 2em;
+    width: 100%;
+    margin: .5em;
+    font-size: 30px;
+}
+
+.h-recipeForm:focus {
+    outline: none;
+}
+
+.h-listStyle {
+    list-style-type: none;
+    padding: 0;
+}
+
+.h-recipeList {
+    border: solid 2px gray;
+    margin: .5em;
+    padding: .5em;
+    height: 7em;
+    display: flex;
+    font-size: 32px;
+}
+
+.h-recipeList:hover {
 
 }
 
-.h-title {
-    text-align: center;
+.h-imageContainer {
+
+}
+
+.h-image {
+    height: 100%;
+}
+
+.h-foodDesContainer {
+    padding: .5em;
+    width: 100%;
+}
+
+.h-topContainer {
+    width: 100%;
+}
+
+.h-foodName {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.h-socialContainer {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.h-avatar {
+    height: 1.1em;
+    width: 1.1em;
+    padding: .1em;
+}
+
+.h-createdBy {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.h-whoLiked {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.h-recipeDescription {
+    padding: .5em;
+    margin: 0;
+    font-size: 24px;
 }

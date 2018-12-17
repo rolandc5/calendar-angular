@@ -1,12 +1,31 @@
 <div class="h-container">
-  <div class="h-todoContainer">
-    <h1 class="h-title">Todo List</h1>
-    <div>
-      <ul>
-          <li>
-            <h2>hello</h2>
+  <div class="h-wrapper">
+    <div class="h-mainBar">
+      <div class="h-formContainer">
+        <input class="h-recipeForm" type="text" placeholder="Search Something to cook!">
+      </div>
+      <div>
+        <ul class="h-listStyle" *ngFor="let recipe of recipes">
+          <li class="h-recipeList">
+            <div class="h-imageContainer">
+              <img class="h-image" src="{{recipe.image}}">
+            </div>
+            <div class="h-foodDesContainer">
+              <div class="h-topContainer">
+                <h3 class="h-foodName">{{ recipe.name }}</h3>
+                <div class="h-socialContainer">
+                  <img class="h-avatar" src="../../assets/images/man.svg">
+                  <div>
+                    <p class="h-createdBy">{{ recipe.creater }}</p>
+                    <p class="h-whoLiked">{{ recipe.likes }} said this is good</p>
+                  </div>
+                </div>
+              </div>
+              <p class="h-recipeDescription">{{ recipe.description }}</p>
+            </div>
           </li>
         </ul>
+      </div>
     </div>
   </div>
 </div>

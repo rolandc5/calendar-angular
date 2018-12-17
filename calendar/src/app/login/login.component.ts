@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserdataService } from '../userdata.service';
-import { Data } from '../Data';
+import { Key } from '../Data';
 
 @Component({
   selector: 'app-login',
@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
   onSubmitLogin() {
     this.userData.onLogin(this.user.username, this.user.password)
       .subscribe(response => {
-        localStorage.setItem("username", (response as Data).success.username);
-        window.location.href="/"
+        localStorage.setItem("username", (response as Key).success.username);
+        window.location.href = "/";
       });
   }
 

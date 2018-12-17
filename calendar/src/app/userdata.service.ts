@@ -1,20 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Data } from './Data';
-
 @Injectable({
   providedIn: 'root'
 })
 export class UserdataService {
-  private URL = 'http://localhost:3030'
+  private URL = {
+    MYURL: 'http://localhost:3030',
+    SPOTURL: 'https://api.spotify.com/v1',
+  }
   constructor(private http: HttpClient) { }
 
   onLogin(username, password) {
-    var login = this.http.post(`${URL}/login`, { username: username, password: password});
-    return login;  
-  }
-
-  getTodoList(username) {
-    return this.http.post(`${URL}/getTodo`, { username: username });
+    return this.http.post(`${this.URL.MYURL}/login`, { username: username, password: password});
   }
 }

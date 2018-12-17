@@ -13,6 +13,6 @@ export class NavigationComponent implements OnInit {
   }
 
   onAccountClick() {
-    localStorage.getItem("id") ? window.location.href = "/" : window.location.href = "/login";
+    localStorage.getItem("username") ? window.location.href = "/" : window.location.href = "/login";
   }
 }
